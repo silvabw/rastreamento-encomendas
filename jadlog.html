@@ -1,0 +1,34 @@
+<!DOCTYPE html
+
+<html>
+	<head>		
+        <title>| Rastreamento Jadlog</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		
+    </head>
+	
+		<body onLoad="setFocus()">
+                
+                <img src="http://www.jadlog.com.br/sitedpd/wp-content/uploads/2017/12/cropped-JADLOG_logo_redgrad_rgb.png" alt="logo jadlog">
+
+                <h1>Consulte abaixo sua encomenda</h1>
+                        <span id="mensagem-erro"></span>
+                <main class="container">
+                    <section class="campo">
+                            <div class="bg-container">
+                                <div class="content">
+        
+                                        <input id="valorid" onblur="montaLink(this);" class="caixa_texto" type="text" name="extras" value="" placeholder="Insira o número do rastreamento">
+                                        <input id="botao-rastrear" onclick="abreLink();" type="button" name="botao-gerar" value="Rastrear">
+
+                                </div>
+                                
+                            </div>
+                    </section>
+                   
+                </main> 
+                <script src="js/rastreia.js"></script>
+		</body>		
+</html>
